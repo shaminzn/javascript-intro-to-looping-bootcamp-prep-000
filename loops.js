@@ -10,8 +10,8 @@ function forLoop(array) {
 }
 
 
-function whileLoop(n) {
-  let countdown = n;
+function whileLoop(num) {
+  let countdown = num;
   while (countdown > 0) {
     console.log(countdown--);
   }
@@ -20,13 +20,13 @@ function whileLoop(n) {
 
 
 function doWhileLoop(array) {
-  function maybeTrue() {
+  function num() {
     return Math.random() >= 0.5;
   }
 
 do {
   array.pop();
-} while (array.length > -1 && maybeTrue());
+} while (array.length > -1 && num());
 return array;
 
 }
